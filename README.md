@@ -36,30 +36,17 @@ assignment/
    npx @tailwindcss/cli init -p
    ```
 
-2. Configure `tailwind.config.js`:
-   ```javascript
-   module.exports = {
-     content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-     theme: {
-       extend: {},
-     },
-     plugins: [],
-   };
-   ```
-
-3. Add Tailwind directives to your CSS file (`src/index.css`):
+2. Add Tailwind directives to your CSS file (`src/index.css`):
    ```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
+   @import "tailwindcss";
    ```
 
-4. Build the CSS file:
+3. Build the CSS file:
    ```bash
    npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch
    ```
 
-5. Start the development server:
+4. Start the development server:
    ```bash
    npm run dev
    ```
@@ -86,5 +73,4 @@ assignment/
    ```
 5. Open the application in your browser.
 
-## License
-This project is licensed under the MIT License.
+
